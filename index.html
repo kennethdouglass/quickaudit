@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Audit Template</title>
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=device-width,initial-scale=1,minimum-scale=1.0, maximum-scale=1.0"/>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="css/norm.css" />
+    <link rel="stylesheet" href="css/lab.css" />
+    
+    <!-- DEV CSS -->
+    <style type="text/css">
+
+
+    </style>
+    
+    <!-- HTML TEMPLATES -->
+    <script id="example-template" type="text/template">
+			<article id="{{id}}" class="subpage" style="display: none;">
+				<a href="#" class="backhomeLink" data-boxid="{{data}}"><i class="Ionicons ion-android-arrow-back"></i></a>
+				<section>
+					<h2>{{header}}</h2>
+				</section>
+			</article>
+    </script>
+    
+    <script id="header-template" type="text/template">
+			<h1> <span>{{TITLE}}</span> <span id="thesite" class="shine" style="color: {{COLOR}};">{{SUBJECT}}</span> </h1>
+    </script>
+    
+    <script id="intro-template" type="text/template">
+			<section id="intro">
+        <div>
+          <h2>{{HEADER}}</h2>
+          {{PARAS}}
+        </div>
+      </section>
+    </script>
+    
+    <script id="bug-template" type="text/template">
+			<section id="{{ID}}" class="bug">
+        <div>
+          <h2>{{HEADER}}</h2>
+          <h3>Page: <a href="{{URL}}" class="new-win">{{PAGE}}</a></h3>
+          {{DESC}}
+          <div><img src="img/{{SSHOT1}}" /></div>
+          <h4>{{SOLHDR}}</h4>
+          {{PARAS}}
+          <div><img src="img/{{SSHOT2}}" /></div>
+        </div>
+      </section>
+    </script>
+    
+    <script id="cookiemsg-template" type="text/template">
+			<div class="cookie-notice" id="cookie-notice">
+        <!--googleoff: all-->
+        <div class="cookie-jar">
+          <span class="cookie-message" id="cookie-message">
+            {{MESSAGE}}
+          </span>
+          <a href="#" class="cookie-close" id="cookie-close">{{BTNTEXT}}</a>
+        </div>
+        <!--googleon: all-->
+      </div>
+		</script>
+    
+    
+    <!-- EXTERNAL DATA & JS FILES -->
+    <script type="text/javascript" src="js/sitedata.js"></script>
+    <script type="text/javascript" src="js/obfusemail.js"></script>
+
+  </head>
+  <body>
+
+<header id="header"></header>
+<div id="page"></div>
+<footer>
+  <p><a href="http://kennethmdouglass.com">kennethmdouglass.com</a></p>
+  <p><script type="text/javascript">obfusemail();</script></p>
+</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script> 
+  <script type="text/javascript" src="js/_main.js"></script>
+
+    </body> 
+</html>
